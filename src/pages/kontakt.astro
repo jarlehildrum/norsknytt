@@ -16,7 +16,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <h2>Send oss en melding</h2>
       
-      <form class="contact-form" action="#" method="post">
+      <form class="contact-form" name="kontakt" method="POST" data-netlify="true" action="/takk">
+        <input type="hidden" name="form-name" value="kontakt" />
         <div class="form-group">
           <label for="name">Navn</label>
           <input type="text" id="name" name="name" required />
