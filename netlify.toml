@@ -5,6 +5,29 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Form notifications
+[[forms]]
+  name = "kontakt"
+  
+  [[forms.notifications]]
+    type = "email"
+    event = "submission"
+    to = "jarle.hildrum@gmail.com"
+    subject = "Ny henvendelse fra Norsknytt kontaktskjema"
+    body = """
+En ny henvendelse er mottatt via kontaktskjemaet på norsknytt.netlify.app:
+
+Navn: {{ name }}
+E-post: {{ email }}
+Emne: {{ subject }}
+
+Melding:
+{{ message }}
+
+---
+Denne meldingen ble sendt automatisk fra Netlify Forms.
+"""
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
