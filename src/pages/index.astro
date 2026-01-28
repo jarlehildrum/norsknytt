@@ -38,15 +38,6 @@ const sortedPosts = posts.sort((a: CollectionEntry<'blog'>, b: CollectionEntry<'
           <div class="entry-content">
             <p>{post.data.description}</p>
           </div>
-          {post.data.tags && post.data.tags.length > 0 && (
-            <footer class="entry-footer">
-              <div class="tags">
-                Merket med: {post.data.tags.map((tag: string) => (
-                  <a href={`/tag/${tag}`} class="tag">{tag}</a>
-                ))}
-              </div>
-            </footer>
-          )}
           <p><a href={`/blog/${post.id.replace(/\.md$/, '')}`}>Les mer &rarr;</a></p>
         </div>
       </article>
