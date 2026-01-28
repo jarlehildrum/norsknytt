@@ -7,8 +7,7 @@ const posts = await getCollection('blog');
 const searchData = posts.map((p: CollectionEntry<'blog'>) => ({ 
   id: p.id.replace(/\.md$/, ''), 
   title: p.data.title, 
-  description: p.data.description, 
-  tags: p.data.tags || [] 
+  description: p.data.description
 }));
 ---
 
@@ -53,8 +52,7 @@ const searchData = posts.map((p: CollectionEntry<'blog'>) => ({
     
     const results = posts.filter(post => 
       post.title.toLowerCase().includes(query) ||
-      post.description.toLowerCase().includes(query) ||
-      post.tags.some(tag => tag.toLowerCase().includes(query))
+      post.description.toLowerCase().includes(query)
     );
     
     if (results.length === 0) {
