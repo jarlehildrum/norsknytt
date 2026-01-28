@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Bestillinger" description="Bestill abonnement pa Norsknytt">
+  <article class="page">
+    <header class="entry-header">
+      <h1 class="entry-title">Bestillinger</h1>
+    </header>
+    
+    <div class="entry-content">
+      <p>
+        Onsker du a abonnere pa Norsknytt? Her kan du bestille abonnement for din skole 
+        eller for deg selv.
+      </p>
+
+      <h2>Abonnement</h2>
+      
+      <div class="subscription-options">
+        <div class="subscription-card">
+          <h3>Skoleabonnement</h3>
+          <p class="price">Kr 890,- per ar</p>
+          <ul>
+            <li>Alle utgaver i lopet av skolearet</li>
+            <li>Kopieringsrett for hele skolen</li>
+            <li>Tilgang til digitale ressurser</li>
+          </ul>
+          <a href="/kontakt" class="button">Bestill na</a>
+        </div>
+        
+        <div class="subscription-card">
+          <h3>Privatperson</h3>
+          <p class="price">Kr 450,- per ar</p>
+          <ul>
+            <li>Alle utgaver i lopet av skolearet</li>
+            <li>Tilsendt direkte hjem</li>
+            <li>Tilgang til digitale ressurser</li>
+          </ul>
+          <a href="/kontakt" class="button">Bestill na</a>
+        </div>
+      </div>
+
+      <h2>Tidligere utgaver</h2>
+      
+      <p>
+        Det er ogsa mulig a bestille tidligere utgaver av Norsknytt. 
+        Ta kontakt med redaksjonen for priser og tilgjengelighet.
+      </p>
+      
+      <p>
+        <a href="/kontakt">Kontakt oss for a bestille tidligere utgaver</a>
+      </p>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .subscription-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .subscription-card {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 2rem;
+  }
+
+  .subscription-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  .subscription-card .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+  }
+
+  .subscription-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .subscription-card ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .subscription-card ul li:before {
+    content: "✓ ";
+    color: var(--color-text-muted);
+  }
+
+  .subscription-card .button {
+    display: inline-block;
+    text-decoration: none;
+  }
+</style>

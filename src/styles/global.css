@@ -1,0 +1,213 @@
+/* Norsknytt Global Styles - Inspirert av norsknytt.no */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --color-bg: #a7c5bd;
+  --color-bg-light: #96BAB0;
+  --color-text: #000000;
+  --color-text-muted: #474747;
+  --color-link: #474747;
+  --color-header-bg: #333333;
+  --color-header-bg-hover: #4F4F4F;
+  --color-white: #FFFFFF;
+  --color-border: #9B9B9B;
+  
+  --font-family: 'Ubuntu', sans-serif;
+  --max-width: 1200px;
+  --header-height: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; opacity: 0.6; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Container */
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-header-bg);
+  color: var(--color-white);
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Buttons */
+button,
+.button {
+  background-color: var(--color-header-bg);
+  color: #A3A3A3;
+  border: none;
+  padding: 0.667em 1.333em;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+  opacity: 0.8;
+}
+
+/* Entry content */
+.entry-content {
+  background: transparent;
+}
+
+.entry-content h1,
+.entry-content h2 {
+  opacity: 0.6;
+}
+
+/* Article styling */
+article {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+article:last-child {
+  border-bottom: none;
+}
+
+/* Article with thumbnail - side by side layout */
+article.has-thumbnail {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.post-thumbnail {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--color-border);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-content {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  article.has-thumbnail {
+    flex-direction: column;
+  }
+  
+  .post-thumbnail {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+.entry-header {
+  margin-bottom: 1rem;
+}
+
+.entry-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.entry-title a {
+  color: var(--color-text);
+}
+
+.entry-title a:hover {
+  color: var(--color-link);
+}
+
+.entry-meta {
+  font-size: 0.875rem;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+/* Tags */
+.tags {
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.25em 0.75em;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  
+  .wrap {
+    padding: 0 1rem;
+  }
+}

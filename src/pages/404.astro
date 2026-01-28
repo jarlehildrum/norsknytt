@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Side ikke funnet" description="Siden du leter etter finnes ikke">
+  <article class="page error-page">
+    <header class="entry-header">
+      <h1 class="entry-title">404 - Side ikke funnet</h1>
+    </header>
+    
+    <div class="entry-content">
+      <p>
+        Beklager, men siden du leter etter finnes ikke eller har blitt flyttet.
+      </p>
+      
+      <p>
+        <a href="/" class="button">Ga til forsiden</a>
+      </p>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .error-page {
+    text-align: center;
+    padding: 4rem 0;
+  }
+
+  .error-page h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .error-page .button {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+</style>

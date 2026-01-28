@@ -1,0 +1,184 @@
+---
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = '/' } = Astro.props;
+
+const navItems = [
+  { href: '/om', label: 'Om' },
+  { href: '/kontakt', label: 'Kontakt' },
+  { href: '/bestillinger', label: 'Bestillinger' },
+  { href: '/arkiv', label: 'Arkiv' },
+  { href: '/sok', label: 'Sok' },
+];
+---
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="wrap">
+      <nav class="main-navigation" aria-label="Toppmeny">
+        <button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
+          Meny
+        </button>
+        <ul id="top-menu" class="menu">
+          {navItems.map((item) => (
+            <li class:list={[{ 'current': currentPath === item.href }]}>
+              <a href={item.href}>{item.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="custom-header">
+    <div class="custom-header-image">
+      <div class="site-branding">
+        <div class="wrap">
+          <a href="/" class="site-logo-link" rel="home">
+            <img 
+              src="/images/norsknytt-logo.png" 
+              alt="Norsknytt" 
+              class="site-logo"
+              width="700"
+              height="295"
+            />
+          </a>
+          <p class="site-description">- et aktuelt laeremiddel i tidsskriftform</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    background-color: var(--color-header-bg);
+  }
+
+  .header-top {
+    background-color: var(--color-header-bg);
+    padding: 0.5rem 0;
+  }
+
+  .header-top .wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .main-navigation {
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: none;
+    background: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+
+  .menu li a:hover,
+  .menu li a:focus,
+  .menu li.current a {
+    background-color: var(--color-header-bg-hover);
+  }
+
+  .custom-header {
+    position: relative;
+  }
+
+  .custom-header-image {
+    background-image: url('/images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-branding {
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .site-logo-link {
+    display: inline-block;
+  }
+
+  .site-logo {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+  }
+
+  .site-description {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: var(--color-header-bg);
+      z-index: 1000;
+    }
+
+    .menu.is-open {
+      display: flex;
+    }
+
+    .menu li a {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--color-header-bg-hover);
+    }
+
+    .site-logo {
+      max-width: 400px;
+    }
+
+    .custom-header-image {
+      min-height: 250px;
+    }
+  }
+</style>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  menuToggle?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+</script>

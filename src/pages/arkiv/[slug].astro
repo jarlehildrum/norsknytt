@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { utgaver, getAlleSlugs, type Utgave } from '../../data/utgaver';
+
+export function getStaticPaths() {
+  const slugs = getAlleSlugs();
+  return slugs.map((slug) => ({
+    params: { slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const utgave = utgaver[slug as string];
+
+if (!utgave) {
+  return Astro.redirect('/404');
+}
+---
+
+<BaseLayout title={utgave.nummer} description={`Norsknytt utgave ${utgave.nummer}`}>
+  <article class="page utgave-side">
+    <header class="entry-header">
+      <h1 class="entry-title">{utgave.nummer}</h1>
+    </header>
+    
+    <div class="entry-content">
+      <div class="media-text">
+        <figure class="media-text__media">
+          <img 
+            src={utgave.bildeUrl} 
+            alt={`Forside Norsknytt ${utgave.nummer}`}
+            loading="lazy"
+          />
+        </figure>
+        
+        <div class="media-text__content">
+          <ul class="innholdsliste">
+            {utgave.innhold.map((artikkel) => (
+              <li>{artikkel}</li>
+            ))}
+          </ul>
+          
+          <div class="pdf-download">
+            <a href={utgave.pdfUrl} class="pdf-link">
+              {utgave.pdfFilnavn}
+            </a>
+            <a href={utgave.pdfUrl} class="pdf-button" download>
+              Last ned
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .entry-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .entry-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  /* Media-text layout som matcher WordPress */
+  .media-text {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .media-text__media {
+    margin: 0;
+  }
+
+  .media-text__media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .media-text__content {
+    padding: 0 1rem;
+  }
+
+  .innholdsliste {
+    list-style: disc;
+    padding-left: 1.5em;
+    margin: 0 0 2rem 0;
+    line-height: 1.8;
+  }
+
+  .innholdsliste li {
+    padding: 0.15rem 0;
+  }
+
+  /* PDF-nedlasting */
+  .pdf-download {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+
+  .pdf-link {
+    color: var(--color-link, #0073aa);
+    text-decoration: underline;
+  }
+
+  .pdf-button {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background-color: #32373c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+  }
+
+  .pdf-button:hover {
+    background-color: #23282d;
+    color: #fff;
+  }
+
+  /* Responsiv design */
+  @media (max-width: 768px) {
+    .media-text {
+      grid-template-columns: 1fr;
+    }
+
+    .media-text__content {
+      padding: 1rem 0 0 0;
+    }
+
+    .pdf-download {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+const posts = await getCollection('blog');
+const searchData = posts.map((p: CollectionEntry<'blog'>) => ({ 
+  id: p.id.replace(/\.md$/, ''), 
+  title: p.data.title, 
+  description: p.data.description, 
+  tags: p.data.tags || [] 
+}));
+---
+
+<BaseLayout title="Sok" description="Sok i Norsknytt-arkivet">
+  <article class="page">
+    <header class="entry-header">
+      <h1 class="entry-title">Sok</h1>
+    </header>
+    
+    <div class="entry-content">
+      <p>
+        Sok i alle artikler og innhold pa Norsknytt.
+      </p>
+
+      <div class="search-container">
+        <input 
+          type="search" 
+          id="search-input" 
+          placeholder="Skriv sokord her..."
+          aria-label="Sok"
+        />
+      </div>
+
+      <div id="search-results" class="search-results">
+        <p class="search-hint">Begynn a skrive for a soke...</p>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<script define:vars={{ posts: searchData }}>
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  
+  searchInput?.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase().trim();
+    
+    if (query.length < 2) {
+      searchResults.innerHTML = '<p class="search-hint">Skriv minst 2 tegn for a soke...</p>';
+      return;
+    }
+    
+    const results = posts.filter(post => 
+      post.title.toLowerCase().includes(query) ||
+      post.description.toLowerCase().includes(query) ||
+      post.tags.some(tag => tag.toLowerCase().includes(query))
+    );
+    
+    if (results.length === 0) {
+      searchResults.innerHTML = '<p class="no-results">Ingen resultater funnet.</p>';
+      return;
+    }
+    
+    searchResults.innerHTML = `
+      <p class="results-count">${results.length} resultat${results.length > 1 ? 'er' : ''} funnet:</p>
+      <ul class="results-list">
+        ${results.map(post => `
+          <li>
+            <a href="/blog/${post.id}">${post.title}</a>
+            <p>${post.description}</p>
+          </li>
+        `).join('')}
+      </ul>
+    `;
+  });
+</script>
+
+<style>
+  .search-container {
+    margin: 2rem 0;
+  }
+
+  #search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    font-family: inherit;
+    background: white;
+  }
+
+  #search-input:focus {
+    outline: none;
+    border-color: var(--color-text-muted);
+  }
+
+  .search-results {
+    margin-top: 2rem;
+  }
+
+  .search-hint,
+  .no-results {
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .results-count {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .results-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .results-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .results-list li a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  .results-list li p {
+    margin: 0.5rem 0 0;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+</style>

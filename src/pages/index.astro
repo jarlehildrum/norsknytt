@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) => 
+  b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout title="Forside">
+  <div class="blog-posts">
+    {sortedPosts.map((post: CollectionEntry<'blog'>) => (
+      <article class="post has-thumbnail">
+        {post.data.image && (
+          <div class="post-thumbnail">
+            <a href={`/blog/${post.id.replace(/\.md$/, '')}`}>
+              <img src={post.data.image} alt={post.data.title} />
+            </a>
+          </div>
+        )}
+        <div class="post-content">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href={`/blog/${post.id.replace(/\.md$/, '')}`}>{post.data.title}</a>
+            </h2>
+            <div class="entry-meta">
+              Publisert den <time datetime={post.data.pubDate.toISOString()}>
+                {post.data.pubDate.toLocaleDateString('nb-NO', {
+                  day: 'numeric',
+                  month: 'long',
+                  year: 'numeric'
+                })}
+              </time> av {post.data.author}
+            </div>
+          </header>
+          <div class="entry-content">
+            <p>{post.data.description}</p>
+          </div>
+          {post.data.tags && post.data.tags.length > 0 && (
+            <footer class="entry-footer">
+              <div class="tags">
+                Merket med: {post.data.tags.map((tag: string) => (
+                  <a href={`/tag/${tag}`} class="tag">{tag}</a>
+                ))}
+              </div>
+            </footer>
+          )}
+          <p><a href={`/blog/${post.id.replace(/\.md$/, '')}`}>Les mer &rarr;</a></p>
+        </div>
+      </article>
+    ))}
+  </div>
+</BaseLayout>

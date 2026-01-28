@@ -1,0 +1,102 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-widgets">
+    <div class="wrap">
+      <div class="widget-area">
+        <div class="widget">
+          <h3 class="widget-title">Om Norsknytt</h3>
+          <p>
+            Norsknytt er et metodikk- og aktivitetsblad for norskfaget i grunnskolen.
+            Bladet presenterer kortfattede artikler samt enkle, pedagogiske tips 
+            knyttet til praktisk opplaering.
+          </p>
+        </div>
+        <div class="widget">
+          <h3 class="widget-title">Kontakt</h3>
+          <p>
+            <a href="/kontakt">Send oss en melding</a><br>
+            <a href="/bestillinger">Bestill abonnement</a>
+          </p>
+        </div>
+        <div class="widget">
+          <h3 class="widget-title">Lenker</h3>
+          <ul>
+            <li><a href="/arkiv">Arkiv</a></li>
+            <li><a href="/om">Om oss</a></li>
+            <li><a href="/sok">Sok</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-info">
+    <div class="wrap">
+      <p>&copy; {currentYear} Norsknytt. Alle rettigheter reservert.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 3rem;
+  }
+
+  .footer-widgets {
+    background-color: var(--color-bg-light);
+    padding: 2rem 0;
+  }
+
+  .widget-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    color: var(--color-text-muted);
+  }
+
+  .widget h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  .widget ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .widget ul li {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .widget ul li:last-child {
+    border-bottom: none;
+  }
+
+  .widget a {
+    color: var(--color-text-muted);
+  }
+
+  .widget a:hover {
+    color: var(--color-text);
+  }
+
+  .site-info {
+    background-color: var(--color-header-bg);
+    color: var(--color-white);
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .site-info p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .site-info a {
+    color: var(--color-white);
+  }
+</style>
