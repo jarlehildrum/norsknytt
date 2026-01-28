@@ -12,28 +12,28 @@ const searchData = posts.map((p: CollectionEntry<'blog'>) => ({
 }));
 ---
 
-<BaseLayout title="Sok" description="Sok i Norsknytt-arkivet">
+<BaseLayout title="Søk" description="Søk i Norsknytt-arkivet">
   <article class="page">
     <header class="entry-header">
-      <h1 class="entry-title">Sok</h1>
+      <h1 class="entry-title">Søk</h1>
     </header>
     
     <div class="entry-content">
       <p>
-        Sok i alle artikler og innhold pa Norsknytt.
+        Søk i alle artikler og innhold på Norsknytt.
       </p>
 
       <div class="search-container">
         <input 
           type="search" 
           id="search-input" 
-          placeholder="Skriv sokord her..."
-          aria-label="Sok"
+          placeholder="Skriv søkeord her..."
+          aria-label="Søk"
         />
       </div>
 
       <div id="search-results" class="search-results">
-        <p class="search-hint">Begynn a skrive for a soke...</p>
+        <p class="search-hint">Begynn å skrive for å søke...</p>
       </div>
     </div>
   </article>
@@ -47,7 +47,7 @@ const searchData = posts.map((p: CollectionEntry<'blog'>) => ({
     const query = e.target.value.toLowerCase().trim();
     
     if (query.length < 2) {
-      searchResults.innerHTML = '<p class="search-hint">Skriv minst 2 tegn for a soke...</p>';
+      searchResults.innerHTML = '<p class="search-hint">Skriv minst 2 tegn for å søke...</p>';
       return;
     }
     

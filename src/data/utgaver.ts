@@ -4,7 +4,7 @@
 export interface Utgave {
   slug: string;
   nummer: string;
-  aar: number;
+  år: number;
   bildeUrl: string;
   pdfUrl: string;
   pdfFilnavn: string;
@@ -20,12 +20,12 @@ export const utgaver: Record<string, Utgave> = {
   '1-2010': {
     slug: '1-2010',
     nummer: '1/2010',
-    aar: 2010,
+    år: 2010,
     bildeUrl: getLokalBildeUrl('1-2010'),
     pdfUrl: 'https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2010_1.pdf',
     pdfFilnavn: 'norsknytt_2010_1',
     innhold: [
-      'Nye laereplanmal i norsk - og ny laereplan i Danmark',
+      'Nye læreplanmål i norsk - og ny læreplan i Danmark',
       'Tegneserien som genre',
       'Morn igjen, rektor!',
       'Kan noen telle stemmene!',
@@ -36,7 +36,7 @@ export const utgaver: Record<string, Utgave> = {
       'Da kjempa eg mot eit rasande lik',
       'Dei sovande',
       'Heim',
-      'Laeraren som formidlar',
+      'Læraren som formidlar',
       'Tryllebundet',
       'Nynorskboka for 8.-10.',
       'Litt av kvart',
@@ -52,7 +52,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2-2021': {
     slug: '1-2-2021',
     nummer: '1-2/2021',
-    aar: 2021,
+    år: 2021,
     bildeUrl: getLokalBildeUrl('1-2-2021'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2021_1_2.pdf`,
     pdfFilnavn: `norsknytt_2021_1_2`,
@@ -64,7 +64,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2-2019': {
     slug: '1-2-2019',
     nummer: '1-2/2019',
-    aar: 2019,
+    år: 2019,
     bildeUrl: getLokalBildeUrl('1-2-2019'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2019_1_2.pdf`,
     pdfFilnavn: `norsknytt_2019_1_2`,
@@ -76,7 +76,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-3-2018': {
     slug: '2-3-2018',
     nummer: '2-3/2018',
-    aar: 2018,
+    år: 2018,
     bildeUrl: getLokalBildeUrl('2-3-2018'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2018_2_3.pdf`,
     pdfFilnavn: `norsknytt_2018_2_3`,
@@ -88,7 +88,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2018': {
     slug: '4-2018',
     nummer: '4/2018',
-    aar: 2018,
+    år: 2018,
     bildeUrl: getLokalBildeUrl('4-2018'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2018_4.pdf`,
     pdfFilnavn: `norsknytt_2018_4`,
@@ -100,7 +100,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2018': {
     slug: '1-2018',
     nummer: '1/2018',
-    aar: 2018,
+    år: 2018,
     bildeUrl: getLokalBildeUrl('1-2018'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2018_1.pdf`,
     pdfFilnavn: `norsknytt_2018_1`,
@@ -112,7 +112,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-3-2017': {
     slug: '2-3-2017',
     nummer: '2-3/2017',
-    aar: 2017,
+    år: 2017,
     bildeUrl: getLokalBildeUrl('2-3-2017'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2017_2_3.pdf`,
     pdfFilnavn: `norsknytt_2017_2_3`,
@@ -124,7 +124,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2017': {
     slug: '4-2017',
     nummer: '4/2017',
-    aar: 2017,
+    år: 2017,
     bildeUrl: getLokalBildeUrl('4-2017'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2017_4.pdf`,
     pdfFilnavn: `norsknytt_2017_4`,
@@ -136,7 +136,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2017': {
     slug: '1-2017',
     nummer: '1/2017',
-    aar: 2017,
+    år: 2017,
     bildeUrl: getLokalBildeUrl('1-2017'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2017_1.pdf`,
     pdfFilnavn: `norsknytt_2017_1`,
@@ -148,7 +148,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2016': {
     slug: '4-2016',
     nummer: '4/2016',
-    aar: 2016,
+    år: 2016,
     bildeUrl: getLokalBildeUrl('4-2016'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2016_4.pdf`,
     pdfFilnavn: `norsknytt_2016_4`,
@@ -160,7 +160,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2016': {
     slug: '1-2016',
     nummer: '1/2016',
-    aar: 2016,
+    år: 2016,
     bildeUrl: getLokalBildeUrl('1-2016'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2016_1.pdf`,
     pdfFilnavn: `norsknytt_2016_1`,
@@ -172,7 +172,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-4-2015': {
     slug: '3-4-2015',
     nummer: '3-4/2015',
-    aar: 2015,
+    år: 2015,
     bildeUrl: getLokalBildeUrl('3-4-2015'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2015_3_4.pdf`,
     pdfFilnavn: `norsknytt_2015_3_4`,
@@ -184,7 +184,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2015': {
     slug: '2-2015',
     nummer: '2/2015',
-    aar: 2015,
+    år: 2015,
     bildeUrl: getLokalBildeUrl('2-2015'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2015_2.pdf`,
     pdfFilnavn: `norsknytt_2015_2`,
@@ -196,7 +196,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2015': {
     slug: '1-2015',
     nummer: '1/2015',
-    aar: 2015,
+    år: 2015,
     bildeUrl: getLokalBildeUrl('1-2015'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2015_1.pdf`,
     pdfFilnavn: `norsknytt_2015_1`,
@@ -208,7 +208,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-4-2014': {
     slug: '3-4-2014',
     nummer: '3-4/2014',
-    aar: 2014,
+    år: 2014,
     bildeUrl: getLokalBildeUrl('3-4-2014'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2014_3_4.pdf`,
     pdfFilnavn: `norsknytt_2014_3_4`,
@@ -220,7 +220,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2-2014': {
     slug: '1-2-2014',
     nummer: '1-2/2014',
-    aar: 2014,
+    år: 2014,
     bildeUrl: getLokalBildeUrl('1-2-2014'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2014_1_2.pdf`,
     pdfFilnavn: `norsknytt_2014_1_2`,
@@ -232,7 +232,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2-2013': {
     slug: '1-2-2013',
     nummer: '1-2/2013',
-    aar: 2013,
+    år: 2013,
     bildeUrl: getLokalBildeUrl('1-2-2013'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2013_1_2.pdf`,
     pdfFilnavn: `norsknytt_2013_1_2`,
@@ -244,7 +244,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2013': {
     slug: '3-2013',
     nummer: '3/2013',
-    aar: 2013,
+    år: 2013,
     bildeUrl: getLokalBildeUrl('3-2013'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2013_3.pdf`,
     pdfFilnavn: `norsknytt_2013_3`,
@@ -260,7 +260,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-4-2012': {
     slug: '3-4-2012',
     nummer: '3-4/2012',
-    aar: 2012,
+    år: 2012,
     bildeUrl: getLokalBildeUrl('3-4-2012'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2012_3_4.pdf`,
     pdfFilnavn: `norsknytt_2012_3_4`,
@@ -272,7 +272,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2012': {
     slug: '2-2012',
     nummer: '2/2012',
-    aar: 2012,
+    år: 2012,
     bildeUrl: getLokalBildeUrl('2-2012'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2012_2.pdf`,
     pdfFilnavn: `norsknytt_2012_2`,
@@ -284,7 +284,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2012': {
     slug: '1-2012',
     nummer: '1/2012',
-    aar: 2012,
+    år: 2012,
     bildeUrl: getLokalBildeUrl('1-2012'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2012_1.pdf`,
     pdfFilnavn: `norsknytt_2012_1`,
@@ -299,7 +299,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-4-2011': {
     slug: '3-4-2011',
     nummer: '3-4/2011',
-    aar: 2011,
+    år: 2011,
     bildeUrl: getLokalBildeUrl('3-4-2011'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2011_3_4.pdf`,
     pdfFilnavn: `norsknytt_2011_3_4`,
@@ -311,7 +311,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2-2011': {
     slug: '1-2-2011',
     nummer: '1-2/2011',
-    aar: 2011,
+    år: 2011,
     bildeUrl: getLokalBildeUrl('1-2-2011'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2011_1_2.pdf`,
     pdfFilnavn: `norsknytt_2011_1_2`,
@@ -323,7 +323,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2010': {
     slug: '4-2010',
     nummer: '4/2010',
-    aar: 2010,
+    år: 2010,
     bildeUrl: getLokalBildeUrl('4-2010'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2010_4.pdf`,
     pdfFilnavn: `norsknytt_2010_4`,
@@ -335,7 +335,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2010': {
     slug: '3-2010',
     nummer: '3/2010',
-    aar: 2010,
+    år: 2010,
     bildeUrl: getLokalBildeUrl('3-2010'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2010_3.pdf`,
     pdfFilnavn: `norsknytt_2010_3`,
@@ -347,7 +347,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2010': {
     slug: '2-2010',
     nummer: '2/2010',
-    aar: 2010,
+    år: 2010,
     bildeUrl: getLokalBildeUrl('2-2010'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2010_2.pdf`,
     pdfFilnavn: `norsknytt_2010_2`,
@@ -359,7 +359,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2-2009': {
     slug: '1-2-2009',
     nummer: '1-2/2009',
-    aar: 2009,
+    år: 2009,
     bildeUrl: getLokalBildeUrl('1-2-2009'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2009_1_2.pdf`,
     pdfFilnavn: `norsknytt_2009_1_2`,
@@ -371,7 +371,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2009': {
     slug: '4-2009',
     nummer: '4/2009',
-    aar: 2009,
+    år: 2009,
     bildeUrl: getLokalBildeUrl('4-2009'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2009_4.pdf`,
     pdfFilnavn: `norsknytt_2009_4`,
@@ -383,7 +383,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2009': {
     slug: '3-2009',
     nummer: '3/2009',
-    aar: 2009,
+    år: 2009,
     bildeUrl: getLokalBildeUrl('3-2009'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2009_3.pdf`,
     pdfFilnavn: `norsknytt_2009_3`,
@@ -395,7 +395,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2008': {
     slug: '4-2008',
     nummer: '4/2008',
-    aar: 2008,
+    år: 2008,
     bildeUrl: getLokalBildeUrl('4-2008'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2008_4.pdf`,
     pdfFilnavn: `norsknytt_2008_4`,
@@ -407,7 +407,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2008': {
     slug: '3-2008',
     nummer: '3/2008',
-    aar: 2008,
+    år: 2008,
     bildeUrl: getLokalBildeUrl('3-2008'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2008_3.pdf`,
     pdfFilnavn: `norsknytt_2008_3`,
@@ -419,7 +419,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2008': {
     slug: '2-2008',
     nummer: '2/2008',
-    aar: 2008,
+    år: 2008,
     bildeUrl: getLokalBildeUrl('2-2008'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2008_2.pdf`,
     pdfFilnavn: `norsknytt_2008_2`,
@@ -431,7 +431,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2008': {
     slug: '1-2008',
     nummer: '1/2008',
-    aar: 2008,
+    år: 2008,
     bildeUrl: getLokalBildeUrl('1-2008'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2008_1.pdf`,
     pdfFilnavn: `norsknytt_2008_1`,
@@ -443,7 +443,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-4-2007': {
     slug: '3-4-2007',
     nummer: '3-4/2007',
-    aar: 2007,
+    år: 2007,
     bildeUrl: getLokalBildeUrl('3-4-2007'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2007_3_4.pdf`,
     pdfFilnavn: `norsknytt_2007_3_4`,
@@ -455,7 +455,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2007': {
     slug: '2-2007',
     nummer: '2/2007',
-    aar: 2007,
+    år: 2007,
     bildeUrl: getLokalBildeUrl('2-2007'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2007_2.pdf`,
     pdfFilnavn: `norsknytt_2007_2`,
@@ -468,7 +468,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2007': {
     slug: '1-2007',
     nummer: '1/2007',
-    aar: 2007,
+    år: 2007,
     bildeUrl: getLokalBildeUrl('1-2007'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2007_1.pdf`,
     pdfFilnavn: `norsknytt_2007_1`,
@@ -480,7 +480,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2006': {
     slug: '4-2006',
     nummer: '4/2006',
-    aar: 2006,
+    år: 2006,
     bildeUrl: getLokalBildeUrl('4-2006'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2006_4.pdf`,
     pdfFilnavn: `norsknytt_2006_4`,
@@ -492,7 +492,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2006': {
     slug: '3-2006',
     nummer: '3/2006',
-    aar: 2006,
+    år: 2006,
     bildeUrl: getLokalBildeUrl('3-2006'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2006_3.pdf`,
     pdfFilnavn: `norsknytt_2006_3`,
@@ -504,7 +504,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2006': {
     slug: '2-2006',
     nummer: '2/2006',
-    aar: 2006,
+    år: 2006,
     bildeUrl: getLokalBildeUrl('2-2006'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2006_2.pdf`,
     pdfFilnavn: `norsknytt_2006_2`,
@@ -517,7 +517,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2006': {
     slug: '1-2006',
     nummer: '1/2006',
-    aar: 2006,
+    år: 2006,
     bildeUrl: getLokalBildeUrl('1-2006'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2006_1.pdf`,
     pdfFilnavn: `norsknytt_2006_1`,
@@ -531,7 +531,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2005': {
     slug: '4-2005',
     nummer: '4/2005',
-    aar: 2005,
+    år: 2005,
     bildeUrl: getLokalBildeUrl('4-2005'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2005_4.pdf`,
     pdfFilnavn: `norsknytt_2005_4`,
@@ -543,7 +543,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2005': {
     slug: '3-2005',
     nummer: '3/2005',
-    aar: 2005,
+    år: 2005,
     bildeUrl: getLokalBildeUrl('3-2005'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2005_3.pdf`,
     pdfFilnavn: `norsknytt_2005_3`,
@@ -555,7 +555,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2005': {
     slug: '2-2005',
     nummer: '2/2005',
-    aar: 2005,
+    år: 2005,
     bildeUrl: getLokalBildeUrl('2-2005'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2005_2.pdf`,
     pdfFilnavn: `norsknytt_2005_2`,
@@ -567,7 +567,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2005': {
     slug: '1-2005',
     nummer: '1/2005',
-    aar: 2005,
+    år: 2005,
     bildeUrl: getLokalBildeUrl('1-2005'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2005_1.pdf`,
     pdfFilnavn: `norsknytt_2005_1`,
@@ -579,7 +579,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2004': {
     slug: '4-2004',
     nummer: '4/2004',
-    aar: 2004,
+    år: 2004,
     bildeUrl: getLokalBildeUrl('4-2004'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2004_4.pdf`,
     pdfFilnavn: `norsknytt_2004_4`,
@@ -591,7 +591,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2004': {
     slug: '3-2004',
     nummer: '3/2004',
-    aar: 2004,
+    år: 2004,
     bildeUrl: getLokalBildeUrl('3-2004'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2004_3.pdf`,
     pdfFilnavn: `norsknytt_2004_3`,
@@ -603,7 +603,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2004': {
     slug: '2-2004',
     nummer: '2/2004',
-    aar: 2004,
+    år: 2004,
     bildeUrl: getLokalBildeUrl('2-2004'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2004_2.pdf`,
     pdfFilnavn: `norsknytt_2004_2`,
@@ -619,7 +619,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2004': {
     slug: '1-2004',
     nummer: '1/2004',
-    aar: 2004,
+    år: 2004,
     bildeUrl: getLokalBildeUrl('1-2004'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2004_1.pdf`,
     pdfFilnavn: `norsknytt_2004_1`,
@@ -636,7 +636,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2003': {
     slug: '4-2003',
     nummer: '4/2003',
-    aar: 2003,
+    år: 2003,
     bildeUrl: getLokalBildeUrl('4-2003'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2003_4.pdf`,
     pdfFilnavn: `norsknytt_2003_4`,
@@ -652,7 +652,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2003': {
     slug: '3-2003',
     nummer: '3/2003',
-    aar: 2003,
+    år: 2003,
     bildeUrl: getLokalBildeUrl('3-2003'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2003_3.pdf`,
     pdfFilnavn: `norsknytt_2003_3`,
@@ -666,7 +666,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2003': {
     slug: '2-2003',
     nummer: '2/2003',
-    aar: 2003,
+    år: 2003,
     bildeUrl: getLokalBildeUrl('2-2003'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2003_2.pdf`,
     pdfFilnavn: `norsknytt_2003_2`,
@@ -678,7 +678,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2003': {
     slug: '1-2003',
     nummer: '1/2003',
-    aar: 2003,
+    år: 2003,
     bildeUrl: getLokalBildeUrl('1-2003'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2003_1.pdf`,
     pdfFilnavn: `norsknytt_2003_1`,
@@ -690,7 +690,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2002': {
     slug: '4-2002',
     nummer: '4/2002',
-    aar: 2002,
+    år: 2002,
     bildeUrl: getLokalBildeUrl('4-2002'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2002_4.pdf`,
     pdfFilnavn: `norsknytt_2002_4`,
@@ -702,7 +702,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2002': {
     slug: '3-2002',
     nummer: '3/2002',
-    aar: 2002,
+    år: 2002,
     bildeUrl: getLokalBildeUrl('3-2002'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2002_3.pdf`,
     pdfFilnavn: `norsknytt_2002_3`,
@@ -714,7 +714,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2002': {
     slug: '2-2002',
     nummer: '2/2002',
-    aar: 2002,
+    år: 2002,
     bildeUrl: getLokalBildeUrl('2-2002'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2002_2.pdf`,
     pdfFilnavn: `norsknytt_2002_2`,
@@ -730,7 +730,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2002': {
     slug: '1-2002',
     nummer: '1/2002',
-    aar: 2002,
+    år: 2002,
     bildeUrl: getLokalBildeUrl('1-2002'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2002_1.pdf`,
     pdfFilnavn: `norsknytt_2002_1`,
@@ -742,7 +742,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2001': {
     slug: '4-2001',
     nummer: '4/2001',
-    aar: 2001,
+    år: 2001,
     bildeUrl: getLokalBildeUrl('4-2001'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2001_4.pdf`,
     pdfFilnavn: `norsknytt_2001_4`,
@@ -756,7 +756,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2001': {
     slug: '3-2001',
     nummer: '3/2001',
-    aar: 2001,
+    år: 2001,
     bildeUrl: getLokalBildeUrl('3-2001'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2001_3.pdf`,
     pdfFilnavn: `norsknytt_2001_3`,
@@ -772,7 +772,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2001': {
     slug: '2-2001',
     nummer: '2/2001',
-    aar: 2001,
+    år: 2001,
     bildeUrl: getLokalBildeUrl('2-2001'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2001_2.pdf`,
     pdfFilnavn: `norsknytt_2001_2`,
@@ -789,7 +789,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2001': {
     slug: '1-2001',
     nummer: '1/2001',
-    aar: 2001,
+    år: 2001,
     bildeUrl: getLokalBildeUrl('1-2001'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2001_1.pdf`,
     pdfFilnavn: `norsknytt_2001_1`,
@@ -801,7 +801,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-2000': {
     slug: '4-2000',
     nummer: '4/2000',
-    aar: 2000,
+    år: 2000,
     bildeUrl: getLokalBildeUrl('4-2000'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2000_4.pdf`,
     pdfFilnavn: `norsknytt_2000_4`,
@@ -817,7 +817,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-2000': {
     slug: '3-2000',
     nummer: '3/2000',
-    aar: 2000,
+    år: 2000,
     bildeUrl: getLokalBildeUrl('3-2000'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2000_3.pdf`,
     pdfFilnavn: `norsknytt_2000_3`,
@@ -832,7 +832,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-2000': {
     slug: '2-2000',
     nummer: '2/2000',
-    aar: 2000,
+    år: 2000,
     bildeUrl: getLokalBildeUrl('2-2000'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2000_2.pdf`,
     pdfFilnavn: `norsknytt_2000_2`,
@@ -844,7 +844,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-2000': {
     slug: '1-2000',
     nummer: '1/2000',
-    aar: 2000,
+    år: 2000,
     bildeUrl: getLokalBildeUrl('1-2000'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_2000_1.pdf`,
     pdfFilnavn: `norsknytt_2000_1`,
@@ -858,7 +858,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-1999': {
     slug: '4-1999',
     nummer: '4/1999',
-    aar: 1999,
+    år: 1999,
     bildeUrl: getLokalBildeUrl('4-1999'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1999_4.pdf`,
     pdfFilnavn: `norsknytt_1999_4`,
@@ -875,7 +875,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1999': {
     slug: '3-1999',
     nummer: '3/1999',
-    aar: 1999,
+    år: 1999,
     bildeUrl: getLokalBildeUrl('3-1999'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1999_3.pdf`,
     pdfFilnavn: `norsknytt_1999_3`,
@@ -887,7 +887,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1999': {
     slug: '2-1999',
     nummer: '2/1999',
-    aar: 1999,
+    år: 1999,
     bildeUrl: getLokalBildeUrl('2-1999'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1999_2.pdf`,
     pdfFilnavn: `norsknytt_1999_2`,
@@ -900,7 +900,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1999': {
     slug: '1-1999',
     nummer: '1/1999',
-    aar: 1999,
+    år: 1999,
     bildeUrl: getLokalBildeUrl('1-1999'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1999_1.pdf`,
     pdfFilnavn: `norsknytt_1999_1`,
@@ -912,7 +912,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-1998': {
     slug: '4-1998',
     nummer: '4/1998',
-    aar: 1998,
+    år: 1998,
     bildeUrl: getLokalBildeUrl('4-1998'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1998_4.pdf`,
     pdfFilnavn: `norsknytt_1998_4`,
@@ -924,7 +924,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1998': {
     slug: '3-1998',
     nummer: '3/1998',
-    aar: 1998,
+    år: 1998,
     bildeUrl: getLokalBildeUrl('3-1998'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1998_3.pdf`,
     pdfFilnavn: `norsknytt_1998_3`,
@@ -936,7 +936,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1998': {
     slug: '2-1998',
     nummer: '2/1998',
-    aar: 1998,
+    år: 1998,
     bildeUrl: getLokalBildeUrl('2-1998'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1998_2.pdf`,
     pdfFilnavn: `norsknytt_1998_2`,
@@ -948,7 +948,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1998': {
     slug: '1-1998',
     nummer: '1/1998',
-    aar: 1998,
+    år: 1998,
     bildeUrl: getLokalBildeUrl('1-1998'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1998_1.pdf`,
     pdfFilnavn: `norsknytt_1998_1`,
@@ -960,7 +960,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-1997': {
     slug: '4-1997',
     nummer: '4/1997',
-    aar: 1997,
+    år: 1997,
     bildeUrl: getLokalBildeUrl('4-1997'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1997_4.pdf`,
     pdfFilnavn: `norsknytt_1997_4`,
@@ -972,7 +972,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1997': {
     slug: '3-1997',
     nummer: '3/1997',
-    aar: 1997,
+    år: 1997,
     bildeUrl: getLokalBildeUrl('3-1997'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1997_3.pdf`,
     pdfFilnavn: `norsknytt_1997_3`,
@@ -984,7 +984,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1997': {
     slug: '2-1997',
     nummer: '2/1997',
-    aar: 1997,
+    år: 1997,
     bildeUrl: getLokalBildeUrl('2-1997'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1997_2.pdf`,
     pdfFilnavn: `norsknytt_1997_2`,
@@ -996,7 +996,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1997': {
     slug: '1-1997',
     nummer: '1/1997',
-    aar: 1997,
+    år: 1997,
     bildeUrl: getLokalBildeUrl('1-1997'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1997_1.pdf`,
     pdfFilnavn: `norsknytt_1997_1`,
@@ -1008,7 +1008,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-1996': {
     slug: '4-1996',
     nummer: '4/1996',
-    aar: 1996,
+    år: 1996,
     bildeUrl: getLokalBildeUrl('4-1996'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1996_4.pdf`,
     pdfFilnavn: `norsknytt_1996_4`,
@@ -1020,7 +1020,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1996': {
     slug: '3-1996',
     nummer: '3/1996',
-    aar: 1996,
+    år: 1996,
     bildeUrl: getLokalBildeUrl('3-1996'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1996_3.pdf`,
     pdfFilnavn: `norsknytt_1996_3`,
@@ -1032,7 +1032,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1996': {
     slug: '2-1996',
     nummer: '2/1996',
-    aar: 1996,
+    år: 1996,
     bildeUrl: getLokalBildeUrl('2-1996'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1996_2.pdf`,
     pdfFilnavn: `norsknytt_1996_2`,
@@ -1044,7 +1044,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1996': {
     slug: '1-1996',
     nummer: '1/1996',
-    aar: 1996,
+    år: 1996,
     bildeUrl: getLokalBildeUrl('1-1996'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1996_1.pdf`,
     pdfFilnavn: `norsknytt_1996_1`,
@@ -1056,7 +1056,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-1995': {
     slug: '4-1995',
     nummer: '4/1995',
-    aar: 1995,
+    år: 1995,
     bildeUrl: getLokalBildeUrl('4-1995'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1995_4.pdf`,
     pdfFilnavn: `norsknytt_1995_4`,
@@ -1068,7 +1068,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1995': {
     slug: '3-1995',
     nummer: '3/1995',
-    aar: 1995,
+    år: 1995,
     bildeUrl: getLokalBildeUrl('3-1995'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1995_3.pdf`,
     pdfFilnavn: `norsknytt_1995_3`,
@@ -1080,7 +1080,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1995': {
     slug: '2-1995',
     nummer: '2/1995',
-    aar: 1995,
+    år: 1995,
     bildeUrl: getLokalBildeUrl('2-1995'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1995_2.pdf`,
     pdfFilnavn: `norsknytt_1995_2`,
@@ -1092,7 +1092,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1995': {
     slug: '1-1995',
     nummer: '1/1995',
-    aar: 1995,
+    år: 1995,
     bildeUrl: getLokalBildeUrl('1-1995'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1995_1.pdf`,
     pdfFilnavn: `norsknytt_1995_1`,
@@ -1104,7 +1104,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-1994': {
     slug: '4-1994',
     nummer: '4/1994',
-    aar: 1994,
+    år: 1994,
     bildeUrl: getLokalBildeUrl('4-1994'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1994_4.pdf`,
     pdfFilnavn: `norsknytt_1994_4`,
@@ -1116,7 +1116,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1994': {
     slug: '3-1994',
     nummer: '3/1994',
-    aar: 1994,
+    år: 1994,
     bildeUrl: getLokalBildeUrl('3-1994'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1994_3.pdf`,
     pdfFilnavn: `norsknytt_1994_3`,
@@ -1128,7 +1128,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1994': {
     slug: '2-1994',
     nummer: '2/1994',
-    aar: 1994,
+    år: 1994,
     bildeUrl: getLokalBildeUrl('2-1994'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1994_2.pdf`,
     pdfFilnavn: `norsknytt_1994_2`,
@@ -1140,7 +1140,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1994': {
     slug: '1-1994',
     nummer: '1/1994',
-    aar: 1994,
+    år: 1994,
     bildeUrl: getLokalBildeUrl('1-1994'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1994_1.pdf`,
     pdfFilnavn: `norsknytt_1994_1`,
@@ -1152,7 +1152,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-1993': {
     slug: '4-1993',
     nummer: '4/1993',
-    aar: 1993,
+    år: 1993,
     bildeUrl: getLokalBildeUrl('4-1993'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1993_4.pdf`,
     pdfFilnavn: `norsknytt_1993_4`,
@@ -1164,7 +1164,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1993': {
     slug: '3-1993',
     nummer: '3/1993',
-    aar: 1993,
+    år: 1993,
     bildeUrl: getLokalBildeUrl('3-1993'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1993_3.pdf`,
     pdfFilnavn: `norsknytt_1993_3`,
@@ -1176,7 +1176,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1993': {
     slug: '2-1993',
     nummer: '2/1993',
-    aar: 1993,
+    år: 1993,
     bildeUrl: getLokalBildeUrl('2-1993'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1993_2.pdf`,
     pdfFilnavn: `norsknytt_1993_2`,
@@ -1188,7 +1188,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1993': {
     slug: '1-1993',
     nummer: '1/1993',
-    aar: 1993,
+    år: 1993,
     bildeUrl: getLokalBildeUrl('1-1993'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1993_1.pdf`,
     pdfFilnavn: `norsknytt_1993_1`,
@@ -1200,7 +1200,7 @@ export const utgaver: Record<string, Utgave> = {
   '4-1992': {
     slug: '4-1992',
     nummer: '4/1992',
-    aar: 1992,
+    år: 1992,
     bildeUrl: getLokalBildeUrl('4-1992'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1992_4.pdf`,
     pdfFilnavn: `norsknytt_1992_4`,
@@ -1212,7 +1212,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1992': {
     slug: '3-1992',
     nummer: '3/1992',
-    aar: 1992,
+    år: 1992,
     bildeUrl: getLokalBildeUrl('3-1992'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1992_3.pdf`,
     pdfFilnavn: `norsknytt_1992_3`,
@@ -1224,7 +1224,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1992': {
     slug: '2-1992',
     nummer: '2/1992',
-    aar: 1992,
+    år: 1992,
     bildeUrl: getLokalBildeUrl('2-1992'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1992_2.pdf`,
     pdfFilnavn: `norsknytt_1992_2`,
@@ -1236,7 +1236,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1992': {
     slug: '1-1992',
     nummer: '1/1992',
-    aar: 1992,
+    år: 1992,
     bildeUrl: getLokalBildeUrl('1-1992'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1992_1.pdf`,
     pdfFilnavn: `norsknytt_1992_1`,
@@ -1248,7 +1248,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1991': {
     slug: '3-1991',
     nummer: '3/1991',
-    aar: 1991,
+    år: 1991,
     bildeUrl: getLokalBildeUrl('3-1991'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1991_3.pdf`,
     pdfFilnavn: `norsknytt_1991_3`,
@@ -1260,7 +1260,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1991': {
     slug: '2-1991',
     nummer: '2/1991',
-    aar: 1991,
+    år: 1991,
     bildeUrl: getLokalBildeUrl('2-1991'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1991_2.pdf`,
     pdfFilnavn: `norsknytt_1991_2`,
@@ -1272,7 +1272,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1991': {
     slug: '1-1991',
     nummer: '1/1991',
-    aar: 1991,
+    år: 1991,
     bildeUrl: getLokalBildeUrl('1-1991'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1991_1.pdf`,
     pdfFilnavn: `norsknytt_1991_1`,
@@ -1284,7 +1284,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1990': {
     slug: '3-1990',
     nummer: '3/1990',
-    aar: 1990,
+    år: 1990,
     bildeUrl: getLokalBildeUrl('3-1990'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1990_3.pdf`,
     pdfFilnavn: `norsknytt_1990_3`,
@@ -1296,7 +1296,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1990': {
     slug: '2-1990',
     nummer: '2/1990',
-    aar: 1990,
+    år: 1990,
     bildeUrl: getLokalBildeUrl('2-1990'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1990_2.pdf`,
     pdfFilnavn: `norsknytt_1990_2`,
@@ -1308,7 +1308,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1990': {
     slug: '1-1990',
     nummer: '1/1990',
-    aar: 1990,
+    år: 1990,
     bildeUrl: getLokalBildeUrl('1-1990'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1990_1.pdf`,
     pdfFilnavn: `norsknytt_1990_1`,
@@ -1320,7 +1320,7 @@ export const utgaver: Record<string, Utgave> = {
   '3-1989': {
     slug: '3-1989',
     nummer: '3/1989',
-    aar: 1989,
+    år: 1989,
     bildeUrl: getLokalBildeUrl('3-1989'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1989_3.pdf`,
     pdfFilnavn: `norsknytt_1989_3`,
@@ -1332,7 +1332,7 @@ export const utgaver: Record<string, Utgave> = {
   '2-1989': {
     slug: '2-1989',
     nummer: '2/1989',
-    aar: 1989,
+    år: 1989,
     bildeUrl: getLokalBildeUrl('2-1989'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1989_2.pdf`,
     pdfFilnavn: `norsknytt_1989_2`,
@@ -1344,7 +1344,7 @@ export const utgaver: Record<string, Utgave> = {
   '1-1989': {
     slug: '1-1989',
     nummer: '1/1989',
-    aar: 1989,
+    år: 1989,
     bildeUrl: getLokalBildeUrl('1-1989'),
     pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_1989_1.pdf`,
     pdfFilnavn: `norsknytt_1989_1`,
@@ -1401,16 +1401,16 @@ for (const slug of alleUtgaverFraArkiv) {
     const match = slug.match(/^(\d+(?:-\d+)?)-(\d{4})$/);
     if (match) {
       const nummerDel = match[1];
-      const aar = parseInt(match[2]);
-      const nummerVisning = nummerDel.replace('-', '-') + '/' + aar;
+      const år = parseInt(match[2]);
+      const nummerVisning = nummerDel.replace('-', '-') + '/' + år;
       
-      // Beregn PDF-filnavn basert pa konvensjon
-      const pdfNummer = `${aar}_${nummerDel.replace('-', '_')}`;
+      // Beregn PDF-filnavn basert på konvensjon
+      const pdfNummer = `${år}_${nummerDel.replace('-', '_')}`;
       
       utgaver[slug] = {
         slug,
         nummer: nummerVisning,
-        aar,
+        år,
         bildeUrl: getLokalBildeUrl(slug),
         pdfUrl: `https://norsknytt.no/wp-content/uploads/2019/09/norsknytt_${pdfNummer}.pdf`,
         pdfFilnavn: `norsknytt_${pdfNummer}`,

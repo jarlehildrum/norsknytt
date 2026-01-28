@@ -1,31 +1,31 @@
 ---
-title: "Tips til tolkning av den nye laereplanen"
-description: "Hosten 2021 folger hele ungdomstrinnet den fagfornyede laereplanen i norsk. Rundt om pa skolene har norsklaerere kommet langt med det viktige tolkningsarbeidet av laereplanene."
+title: "Tips til tolkning av den nye læreplanen"
+description: "Høsten 2021 følger hele ungdomstrinnet den fagfornyede læreplanen i norsk. Rundt om på skolene har norsklærere kommet langt med det viktige tolkningsarbeidet av læreplanene."
 pubDate: 2021-11-25
 author: "Bjarne Berre"
-tags: ["laereplan", "fagfornyelsen", "ungdomstrinnet"]
+tags: ["læreplan", "fagfornyelsen", "ungdomstrinnet"]
 ---
 
-Hosten 2021 folger hele ungdomstrinnet den fagfornyede laereplanen i norsk. Rundt om pa skolene har norsklaerere kommet langt med det viktige tolkningsarbeidet av laereplanene. Fagre og viktige formalsord kobles sammen med handlingsverb i kompetansemalene. I samsvar med norsk tradisjon er det i stor grad opp til hver enkelt skole og den enkelte norsklarer hvordan laereplanen skal forstas.
+Høsten 2021 følger hele ungdomstrinnet den fagfornyede læreplanen i norsk. Rundt om på skolene har norsklærere kommet langt med det viktige tolkningsarbeidet av læreplanene. Fagre og viktige formålsord kobles sammen med handlingsverb i kompetansemålene. I samsvar med norsk tradisjon er det i stor grad opp til hver enkelt skole og den enkelte norsklærer hvordan læreplanen skal forstås.
 
-Nar Norsknytt i dette laerepalnummeret kommenterer de enkelte kompetansemalene, er det altsa ingen fasit som blir presentert. Derimot haper vi at kommentarene kan bidra til at norsklaerere ser enda flere muligheter og meisler ut sin egen vei.
+Når Norsknytt i dette læreplanummeret kommenterer de enkelte kompetansemålene, er det altså ingen fasit som blir presentert. Derimot håper vi at kommentarene kan bidra til at norsklærere ser enda flere muligheter og meisler ut sin egen vei.
 
-## Nye laeremidler
+## Nye læremidler
 
-Forlagene har gjort en kjempejobb ved a utvikle nye laeremidler. Det er synd og skam at ikke flere skoler har okonomiske muskler til a kjope inn det som trengs. Norsknytt omtaler flere av de nye laeremidlene som er kommet pa markedet. Vi kaster oss et blikk pa nabo-landenes laereverk for a sanke ideer til gode trearsplaner.
+Forlagene har gjort en kjempejobb ved å utvikle nye læremidler. Det er synd og skam at ikke flere skoler har økonomiske muskler til å kjøpe inn det som trengs. Norsknytt omtaler flere av de nye læremidlene som er kommet på markedet. Vi kaster oss et blikk på nabo-landenes læreverk for å sanke ideer til gode treårsplaner.
 
 ## Hva skjer med skriftlig eksamen?
 
-Utdanningsdirektoratet samarbeider med Skrivesenteret om a utvikle et nytt konsept for skriftlig eksamen pa ungdomstrinnet. Innholdsmessig ligger det an til flere viktige endringer. Elevene skal svare pa flere smaoppgaver, og det rent norskfaglige ser ut til a bli enda sterkere vektlagt enn tidligere.
+Utdanningsdirektoratet samarbeider med Skrivesenteret om å utvikle et nytt konsept for skriftlig eksamen på ungdomstrinnet. Innholdsmessig ligger det an til flere viktige endringer. Elevene skal svare på flere småoppgaver, og det rent norskfaglige ser ut til å bli enda sterkere vektlagt enn tidligere.
 
-Mange ivrige norsklaerere har allerede kommet med innspill til de publiserte eksamensoppgavene som direktoratet har publisert. I dette nummeret har vi samlet oppgavesettet i trykt form, og pa den maten kan lesere som liker a lese pa ark, lett fa oversikt.
+Mange ivrige norsklærere har allerede kommet med innspill til de publiserte eksamensoppgavene som direktoratet har publisert. I dette nummeret har vi samlet oppgavesettet i trykt form, og på den måten kan lesere som liker å lese på ark, lett få oversikt.
 
 ## Tilbake i klasserommet
 
-Pandemien har skapt store utfordringer i skolen. Mange elever og laerere har tatt sjumils-steg nar det gjelder bruken av digitale laeremidler. Oppfinnsomheten og utholdenheten har vaert stor. Na er vi alle glade for a vaere tilbake igjen i klasserommene, ansikt til ansikt med dem vi underviser.
+Pandemien har skapt store utfordringer i skolen. Mange elever og lærere har tatt sjumilssteg når det gjelder bruken av digitale læremidler. Oppfinnsomheten og utholdenheten har vært stor. Nå er vi alle glade for å være tilbake igjen i klasserommene, ansikt til ansikt med dem vi underviser.
 
-Selv om skjermskolen hadde sine positive sider, var det ikke alltid lett a holde motivasjonen oppe. Na er det nesten litt godt a se at elevene torster etter gode samarbeidsoppgaver pa skolen.
+Selv om skjermskolen hadde sine positive sider, var det ikke alltid lett å holde motivasjonen oppe. Nå er det nesten litt godt å se at elevene tørster etter gode samarbeidsoppgaver på skolen.
 
-Ogsa Norsknytt-redaksjonen har latt seg merke av pandemien, men na starter vi pa ny frisk. I de kommende numrene av Norsknytt vil vi tilby en miks av omtaler, faglige oppdateringer og undervisningsopplegg.
+Også Norsknytt-redaksjonen har latt seg merke av pandemien, men nå starter vi på ny frisk. I de kommende numrene av Norsknytt vil vi tilby en miks av omtaler, faglige oppdateringer og undervisningsopplegg.
 
-Lykke til med det vi haper blir et ganske normalt skolear!
+Lykke til med det vi håper blir et ganske normalt skoleår!
